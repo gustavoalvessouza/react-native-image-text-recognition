@@ -40,7 +40,6 @@ function App(): JSX.Element {
 
       setImageURI(file);
 
-      console.log('[TEST] textRecognition', textRecognition.split('\n'));
       if (textRecognition) {
         setExtractedText(textRecognition.split('\n'));
       }
@@ -140,8 +139,8 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   image: {
-    width: 300, // Ajuste a largura conforme necessário
-    height: 200, // Ajuste a altura conforme necessário
+    width: 300,
+    height: 200,
     borderRadius: 5,
     resizeMode: 'cover',
   },
